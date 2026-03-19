@@ -12,3 +12,9 @@ file.close()
 city_to_find = input('Enter a city: ')
 
 # Your code below — find all students from that city
+for student in students:
+    name = student[0]
+    city = student[2]
+    if city == city_to_find:
+        print(f"{name} is from {city_to_find}.")
+        

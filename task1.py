@@ -10,3 +10,5 @@ for line in file:
 file.close()
 
 # Your code below — use the students list
+for student in students:
+    print(f"{student[0]} is {student[1]} years old and lives in {student[2]}.")

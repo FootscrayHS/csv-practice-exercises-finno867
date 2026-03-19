@@ -24,3 +24,8 @@ file.close()
 
 # Your code below — loop through results and display each student's grade
 # Use get_grade(score) to get the grade string — e.g. get_grade(results[0][1])
+for result in results:
+    name = result[0]
+    score = result[1]
+    grade = get_grade(score)
+    print(f'{name:<7} {score:<2}%  {grade}')

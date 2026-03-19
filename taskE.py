@@ -17,3 +17,6 @@ results.append([new_name, new_score])
 
 # Your code below — write the updated list back to scores.csv
 # Each line should be:  name,score
+with open('scores.csv', 'w') as file:
+    for name, score in results:
+        file.write(f'{name},{score}\n')
